@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h> // bool type is not built in
 
 int main() {
     printf("----------------\n");
@@ -11,6 +12,7 @@ int main() {
     char e = 87; // ASCII value for W
     char f[] = "Mipu";
     int g = 76e3; // Scientific notation, same as 76 * 10^3 = 76000
+    bool j = true; // 1 byte, true or false
 
     // Print different types of variables
     printf("int a: %d", a);
@@ -26,6 +28,8 @@ int main() {
     printf("string f: %s", f);
     printf("\n");
     printf("int g: %d", g);
+    printf("\n");
+    printf("bool j: %d", j); // prints 1 for true, 0 for false
     printf("\n");
     printf("----------------\n");
 
